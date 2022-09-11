@@ -23,6 +23,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven submodule
-      run: mvn -B install --file nrh-sns-client/pom.xml
+      run: mvn -B install --file ./nrh-sns-client/pom.xml
     - name: Build with Maven
       run: mvn -B package --file pom.xml
