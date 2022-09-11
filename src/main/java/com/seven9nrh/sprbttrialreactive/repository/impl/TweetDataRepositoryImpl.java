@@ -1,6 +1,6 @@
-package com.seven9nrh.tategaki1.repository.impl;
+package com.seven9nrh.sprbttrialreactive.repository.impl;
 
-import com.seven9nrh.tategaki1.repository.TweetDataRepository;
+import com.seven9nrh.sprbttrialreactive.repository.TweetDataRepository;
 import com.seven9nrh.twitter.TwitterApiClient;
 import com.seven9nrh.twitter.model.TweetData;
 import org.springframework.stereotype.Repository;

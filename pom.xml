@@ -8,9 +8,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.seven9nrh</groupId>
-	<artifactId>tategaki-1</artifactId>
+	<artifactId>sprbt-trial-reactive</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>tategaki-1</name>
+	<name>sprbt-trial-reactive</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

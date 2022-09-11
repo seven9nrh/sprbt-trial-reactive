@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
-    <title>タテガキ</title>
+    <title>Search Tweet</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +14,7 @@
   <body>
     <div class="row">
       <div class="col-md-6">
-        <form th:action="@{/tweetsSerchRecent}" method="get">
+        <form th:action="@{/tweets/search_recent}" method="get">
           <div class="input-group">
             <input
               type="text"
@@ -27,16 +27,18 @@
             </span>
           </div>
         </form>
+        <div class="d-flex p-2">
+          <div class="mx-2 badge bg-primary">[[${query}]]</div>
+          <div class="mx-2 badge bg-info">[[${oldQuery}]]</div>
+        </div>
       </div>
     </div>
-    <div class="d-flex flex-row bd-highlight mb-3">
+    <div class="d-flex flex-column flex-wrap">
       <div class="p-2" data-th-each="tweetData:${tweetDataList}">
-        <div style="writing-mode: vertical-rl">
-          <span class="text-light bg-dark"
-            >[[${tweetData.userData.name}]]
-          </span>
-          [[${tweetData.text}]]
+        <div class="rounded text-light bg-primary">
+          [[${tweetData.userData.name}]] [[${tweetData.createdAt}]]
         </div>
+        <div class="p-2 rounded bg-info">[[${tweetData.text}]]</div>
       </div>
     </div>
 

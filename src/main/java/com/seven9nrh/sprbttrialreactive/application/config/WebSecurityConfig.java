@@ -1,4 +1,4 @@
-package com.seven9nrh.tategaki1.application.config;
+package com.seven9nrh.sprbttrialreactive.application.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
