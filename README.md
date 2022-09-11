@@ -1,5 +1,7 @@
 # sprbt-trial-reactive
 
+[![Java CI with Maven](https://github.com/seven9nrh/sprbt-trial-reactive/actions/workflows/maven.yml/badge.svg)](https://github.com/seven9nrh/sprbt-trial-reactive/actions/workflows/maven.yml)
+
 ## Features
 - Displaying Tweets using Twitter API
 - Reactive Programming with Spring WebFlux
