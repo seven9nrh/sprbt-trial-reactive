@@ -22,6 +22,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: update submodule
+      run: git submodule update
     - name: Build with Maven submodule
       run: mvn -B install --file ./nrh-sns-client/pom.xml
     - name: Build with Maven
